@@ -81,4 +81,4 @@ def update_aluno(request, aluno_id: int, aluno_data: AlunosSchema):
         if value:
             setattr(aluno, attr, value)
     aluno.save()
-    return 'teste'
+    return aluno
